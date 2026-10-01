@@ -1,0 +1,886 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<style>
+  :root{
+    color-scheme: light;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  body{margin:0}
+  img{max-width:100%}
+  [hidden]{display:none !important}
+</style>
+<title>方劉府喜宴總招待工作表</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;600;700&display=swap">
+<style>
+  :root{
+    --paper:#FBF6F2;
+    --surface:#FFFFFF;
+    --surface-2:#F5EDE7;
+    --ink:#2B1F1B;
+    --ink-2:#6E5C55;
+    --ink-3:#9B8880;
+    --rule:#E5D8CF;
+    --red:#A32C26;
+    --red-soft:#F6E5E2;
+    --gold:#94712F;
+    --gold-soft:#F5EDDC;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#17110F;
+      --surface:#211A17;
+      --surface-2:#2B2220;
+      --ink:#F0E6E0;
+      --ink-2:#BFACA4;
+      --ink-3:#8E7B73;
+      --rule:#3A2E2A;
+      --red:#E9877E;
+      --red-soft:#3A211E;
+      --gold:#D4AF66;
+      --gold-soft:#332A1C;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#17110F;
+    --surface:#211A17;
+    --surface-2:#2B2220;
+    --ink:#F0E6E0;
+    --ink-2:#BFACA4;
+    --ink-3:#8E7B73;
+    --rule:#3A2E2A;
+    --red:#E9877E;
+    --red-soft:#3A211E;
+    --gold:#D4AF66;
+    --gold-soft:#332A1C;
+    color-scheme: dark;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+    font-size:15px;
+    line-height:1.7;
+    -webkit-text-size-adjust:100%;
+  }
+  h1,h2,h3{font-family:"Noto Serif TC","Songti TC",serif;text-wrap:balance;margin:0}
+
+  /* ---------- header ---------- */
+  .top{
+    position:sticky;
+    top:env(safe-area-inset-top, 0px);
+    z-index:20;
+    background:var(--surface);
+    border-bottom:1px solid var(--rule);
+  }
+  .top-inner{
+    max-width:760px;margin:0 auto;
+    padding:14px 16px 0;
+  }
+  .brand{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px}
+  .brand h1{font-size:19px;font-weight:700;letter-spacing:.02em}
+  .brand .who{
+    font-size:11.5px;letter-spacing:.14em;
+    color:var(--red);border:1px solid var(--red);
+    border-radius:2px;padding:1px 7px;line-height:1.6;
+    white-space:nowrap;
+  }
+  .venue{font-size:12.5px;color:var(--ink-2);margin-top:2px}
+  .keys{
+    display:flex;flex-wrap:wrap;gap:0 18px;
+    margin-top:9px;padding-top:9px;border-top:1px dashed var(--rule);
+    font-size:12.5px;color:var(--ink-2);
+  }
+  .keys b{
+    font-family:"Noto Serif TC",serif;font-weight:700;color:var(--ink);
+    font-variant-numeric:tabular-nums;
+  }
+  /* tabs */
+  .tabs{
+    display:flex;gap:2px;overflow-x:auto;margin-top:10px;
+    scrollbar-width:none;
+  }
+  .tabs::-webkit-scrollbar{display:none}
+  .tabs button{
+    flex:0 0 auto;
+    appearance:none;background:none;border:0;
+    border-bottom:2px solid transparent;
+    color:var(--ink-2);
+    font:inherit;font-size:14px;font-weight:500;
+    padding:8px 11px 9px;cursor:pointer;
+    white-space:nowrap;
+  }
+  .tabs button:hover{color:var(--ink)}
+  .tabs button[aria-selected="true"]{
+    color:var(--red);border-bottom-color:var(--red);font-weight:700;
+  }
+  .tabs button:focus-visible{outline:2px solid var(--red);outline-offset:-2px}
+
+  /* ---------- page body ---------- */
+  main{max-width:760px;margin:0 auto;padding:20px 16px 56px}
+  section[role="tabpanel"]{animation:fade .18s ease-out}
+  @keyframes fade{from{opacity:.4}to{opacity:1}}
+  @media (prefers-reduced-motion:reduce){section[role="tabpanel"]{animation:none}}
+
+  .lead{font-size:13px;color:var(--ink-2);margin:0 0 18px}
+
+  h2.block{
+    font-size:13px;font-weight:600;letter-spacing:.16em;
+    color:var(--gold);margin:26px 0 10px;
+    font-family:"Noto Sans TC",sans-serif;
+  }
+  h2.block:first-of-type{margin-top:4px}
+
+  /* big duty cards */
+  .duties{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(228px,1fr))}
+  .duty{
+    background:var(--surface);border:1px solid var(--rule);border-radius:3px;
+    padding:13px 15px;display:flex;flex-direction:column;gap:3px;
+  }
+  .duty .t{
+    font-family:"Noto Serif TC",serif;font-weight:700;font-size:15px;
+    color:var(--red);font-variant-numeric:tabular-nums;
+  }
+  .duty .n{font-weight:700;font-size:15px}
+  .duty .d{font-size:13px;color:var(--ink-2)}
+
+  /* timeline */
+  .tl{display:flex;flex-direction:column}
+  .row{
+    display:grid;grid-template-columns:70px 1fr;gap:0 14px;
+    padding:11px 0;border-top:1px solid var(--rule);
+  }
+  .row:first-child{border-top:0}
+  .row .time{
+    font-family:"Noto Serif TC",serif;font-weight:600;font-size:14px;
+    font-variant-numeric:tabular-nums;color:var(--ink-2);
+    padding-top:1px;
+  }
+  .row.mine{background:var(--red-soft);margin:0 -12px;padding-left:12px;padding-right:12px;border-radius:2px;border-top-color:transparent}
+  .row.mine + .row{border-top-color:transparent}
+  .row.mine .time{color:var(--red)}
+  .stage{font-size:13px;color:var(--ink-2)}
+  .mytask{
+    font-weight:700;font-size:14.5px;color:var(--ink);
+    display:flex;gap:7px;align-items:flex-start;
+  }
+  .mytask::before{
+    content:"";flex:0 0 auto;width:6px;height:6px;border-radius:50%;
+    background:var(--red);margin-top:8px;
+  }
+  .sub{font-size:12.5px;color:var(--ink-2);padding-left:13px}
+
+  /* checklist */
+  .check{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px}
+  .check li{
+    background:var(--surface);border:1px solid var(--rule);border-radius:3px;
+    padding:11px 13px;display:flex;gap:11px;align-items:flex-start;
+  }
+  .check input{
+    appearance:none;flex:0 0 auto;width:19px;height:19px;margin-top:2px;
+    border:1.5px solid var(--ink-3);border-radius:3px;background:var(--surface);
+    cursor:pointer;position:relative;
+  }
+  .check input:checked{background:var(--red);border-color:var(--red)}
+  .check input:checked::after{
+    content:"";position:absolute;left:5.5px;top:1.5px;
+    width:5px;height:10px;border:solid #fff;border-width:0 2px 2px 0;
+    transform:rotate(43deg);
+  }
+  .check input:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+  .check label{cursor:pointer;flex:1}
+  .check .lt{font-weight:500;display:block}
+  .check .ld{font-size:12.5px;color:var(--ink-2);display:block}
+  .check li:has(input:checked) .lt{color:var(--ink-3);text-decoration:line-through}
+
+  /* contacts */
+  .people{display:flex;flex-direction:column;gap:8px}
+  .p{
+    background:var(--surface);border:1px solid var(--rule);border-radius:3px;
+    padding:11px 13px;display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center;
+  }
+  .p .role{
+    font-size:11px;letter-spacing:.1em;color:var(--gold);
+    flex:0 0 100%;
+  }
+  .p .name{font-weight:700;font-size:15px}
+  .p .when{font-size:12px;color:var(--ink-3)}
+  .p .tel{
+    margin-left:auto;display:flex;align-items:center;gap:8px;
+  }
+  .p .num{
+    font-family:"Noto Serif TC",serif;font-variant-numeric:tabular-nums;
+    font-size:14.5px;letter-spacing:.02em;user-select:all;
+  }
+  .p .num.none{font-family:inherit;font-size:12.5px;color:var(--ink-3);user-select:auto}
+  .copy{
+    appearance:none;border:1px solid var(--rule);background:var(--surface-2);
+    color:var(--ink-2);font:inherit;font-size:11.5px;
+    padding:2px 8px;border-radius:2px;cursor:pointer;white-space:nowrap;
+  }
+  .copy:hover{border-color:var(--red);color:var(--red)}
+  .copy:focus-visible{outline:2px solid var(--red);outline-offset:1px}
+
+  /* rule panels */
+  .panel{
+    background:var(--surface);border:1px solid var(--rule);border-radius:3px;
+    padding:13px 15px;margin-bottom:10px;
+  }
+  .panel h3{font-size:14.5px;font-weight:700;margin-bottom:5px}
+  .panel p{margin:0;font-size:13.5px;color:var(--ink-2)}
+  .panel ul{margin:6px 0 0;padding-left:19px;font-size:13.5px;color:var(--ink-2)}
+  .panel li{margin:2px 0}
+  .panel.warn{border-left:3px solid var(--red);background:var(--red-soft)}
+  .panel.warn p,.panel.warn ul{color:var(--ink)}
+
+  .pair{display:grid;gap:4px 14px;grid-template-columns:auto 1fr;font-size:13.5px}
+  .pair dt{color:var(--ink-3)}
+  .pair dd{margin:0;color:var(--ink)}
+
+  /* floor plan */
+  .plan{margin:0 0 10px}
+  .plan-img{
+    overflow-x:auto;background:#fff;
+    border:1px solid var(--rule);border-radius:3px;
+    -webkit-overflow-scrolling:touch;
+  }
+  .plan-img img{display:block;min-width:720px;width:100%;max-width:1400px}
+  .plan figcaption{font-size:12px;color:var(--ink-3);margin-top:6px}
+
+  /* grid table */
+  .table-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:3px;background:var(--surface)}
+  table.grid{border-collapse:collapse;width:100%;min-width:400px;font-size:13.5px}
+  table.grid th,table.grid td{
+    padding:8px 12px;text-align:left;border-bottom:1px solid var(--rule);
+    white-space:nowrap;
+  }
+  table.grid thead th{
+    font-size:11.5px;letter-spacing:.1em;color:var(--gold);font-weight:600;
+    background:var(--surface-2);
+  }
+  table.grid tbody tr:last-child td{border-bottom:0}
+  table.grid td:first-child{
+    font-family:"Noto Serif TC",serif;font-weight:700;
+    font-variant-numeric:tabular-nums;width:1%;
+  }
+  table.grid td.m{color:#2F5FA8}
+  table.grid td.f{color:var(--red)}
+  table.grid td.q{color:var(--ink-3);text-align:center;width:1%}
+  table.grid td.n{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink-2);width:1%}
+  table.grid td.hit{color:var(--red);font-weight:500}
+
+  /* seat search */
+  .search{margin-bottom:14px}
+  .search input{
+    width:100%;font:inherit;font-size:16px;
+    padding:11px 13px;border-radius:3px;
+    border:1px solid var(--rule);background:var(--surface);color:var(--ink);
+  }
+  .search input:focus{outline:2px solid var(--red);outline-offset:-1px;border-color:var(--red)}
+  .res{
+    background:var(--surface);border:1px solid var(--rule);border-radius:3px;
+    padding:12px 14px;margin-bottom:8px;
+  }
+  .res .rt{display:flex;align-items:baseline;gap:9px;margin-bottom:5px}
+  .res .rn{
+    font-family:"Noto Serif TC",serif;font-weight:700;font-size:19px;color:var(--red);
+    font-variant-numeric:tabular-nums;
+  }
+  .res .rl{font-weight:700}
+  .res .rc{font-size:12px;color:var(--ink-3);margin-left:auto}
+  .res .rp{font-size:13.5px;color:var(--ink-2);line-height:1.9}
+  .res mark{background:var(--gold-soft);color:var(--ink);font-weight:700;padding:0 3px;border-radius:2px}
+  .empty{color:var(--ink-3);font-size:13.5px;padding:4px 2px}
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]) table.grid td.m{color:#8FB3E8}
+  }
+  :root[data-theme="dark"] table.grid td.m{color:#8FB3E8}
+
+  /* seat list */
+  .pair.seat{grid-template-columns:34px 1fr;row-gap:5px;align-items:baseline}
+  .pair.seat dt{
+    font-family:"Noto Serif TC",serif;font-weight:700;font-variant-numeric:tabular-nums;
+    color:var(--ink);text-align:right;
+  }
+  .pair.seat dd.m{color:#2F5FA8}
+  .pair.seat dd.f{color:var(--red)}
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]) .pair.seat dd.m{color:#8FB3E8}
+  }
+  :root[data-theme="dark"] .pair.seat dd.m{color:#8FB3E8}
+
+  .tag{
+    display:inline-block;font-size:11.5px;letter-spacing:.06em;
+    background:var(--gold-soft);color:var(--gold);
+    border-radius:2px;padding:1px 7px;margin-left:6px;
+  }
+  .todo{
+    display:inline-block;font-size:11.5px;letter-spacing:.06em;
+    background:var(--red-soft);color:var(--red);
+    border-radius:2px;padding:1px 7px;margin-left:6px;
+  }
+  footer{
+    max-width:760px;margin:0 auto;padding:0 16px 40px;
+    font-size:12px;color:var(--ink-3);
+  }
+  @media (max-width:420px){
+    .row{grid-template-columns:60px 1fr;gap:0 10px}
+    .p .tel{margin-left:0;flex:0 0 100%}
+  }
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">
+      <h1>方劉府喜宴</h1>
+      <span class="who">總招待 劉謙</span>
+    </div>
+    <div class="venue">2026/10/11（日）午宴 · 台北國泰萬怡酒店 2F 霖苑廳</div>
+    <div class="keys">
+      <span>桌數 <b>21</b>（20 葷＋預備 1）</span>
+      <span>迎賓 <b>11:30</b></span>
+      <span>入席 <b>12:00</b></span>
+      <span>開場 <b>12:30</b></span>
+    </div>
+    <nav class="tabs" role="tablist" aria-label="工作表分頁">
+      <button role="tab" id="tab-a" aria-controls="p-a" aria-selected="true">速覽</button>
+      <button role="tab" id="tab-b" aria-controls="p-b" aria-selected="false">時間軸</button>
+      <button role="tab" id="tab-c" aria-controls="p-c" aria-selected="false">我的工作</button>
+      <button role="tab" id="tab-h" aria-controls="p-h" aria-selected="false">座位查詢</button>
+      <button role="tab" id="tab-f" aria-controls="p-f" aria-selected="false">特殊餐位</button>
+      <button role="tab" id="tab-g" aria-controls="p-g" aria-selected="false">位上禮</button>
+      <button role="tab" id="tab-d" aria-controls="p-d" aria-selected="false">聯絡人</button>
+      <button role="tab" id="tab-e" aria-controls="p-e" aria-selected="false">現場守則</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ 速覽 ============ -->
+<section role="tabpanel" id="p-a" aria-labelledby="tab-a">
+  <p class="lead">今天的六個重點，和你自己的時間點。</p>
+
+  <div class="duties">
+    <div class="duty"><span class="t">07:30</span><span class="n">到萬怡吃早餐</span><span class="d">和小潔一起，1F MJ Kitchen</span></div>
+    <div class="duty"><span class="t">09:00–10:00</span><span class="n">文定收金飾</span><span class="d">金飾不擺出來，由你收著</span></div>
+    <div class="duty"><span class="t">11:45–12:30</span><span class="n">發女方家人大餅</span><span class="d">白色盒、內含大餅，你和劉佳潔直接走到親戚那桌發，櫃檯接待不用發</span></div>
+    <div class="duty"><span class="t">11:30</span><span class="n">迎賓、帶位</span><span class="d">帶招待引導賓客入席，請主桌長輩入座</span></div>
+    <div class="duty"><span class="t">12:00</span><span class="n">確認開席</span><span class="d">和飯店確認開席時間與開席桌數</span></div>
+    <div class="duty"><span class="t">15:00</span><span class="n">保管禮金</span><span class="d">男女方分開點收，紅包不要拆</span></div>
+  </div>
+
+  <h2 class="block">現場數字</h2>
+  <div class="panel">
+    <dl class="pair">
+      <dt>桌數</dt><dd>20 葷桌＋預備 1 桌，共 21 桌</dd>
+      <dt>素食</dt><dd>2 套（當天不接受賓客自行加點）</dd>
+      <dt>兒童椅</dt><dd>4 張</dd>
+      <dt>自備酒水</dt><dd>香檳 2 瓶</dd>
+      <dt>每桌紅酒</dt><dd>2 瓶</dd>
+      <dt>收禮桌</dt><dd>C 區，2 張桌＋4 張椅，不需收禮桌牌</dd>
+    </dl>
+  </div>
+
+  <h2 class="block">主桌名單</h2>
+  <div class="panel">
+    <dl class="pair">
+      <dt>男方</dt><dd>新郎、爸爸、媽媽、二叔、三叔、舅舅</dd>
+      <dt>女方</dt><dd>新娘、爸爸、媽媽、三位舅舅</dd>
+    </dl>
+  </div>
+
+  <h2 class="block">收禮</h2>
+  <div class="panel warn">
+    <h3>男女方分開收，紅包不拆</h3>
+    <p>男方和女方的禮金各收各的、分開放，不要混在一起。收到的紅包保持原樣，不要把裡面的錢抽出來，整包收好。</p>
+  </div>
+  <div class="panel">
+    <dl class="pair">
+      <dt>男方</dt><dd>宛儒、舒涵</dd>
+      <dt>女方</dt><dd>果果</dd>
+      <dt>位置</dt><dd>C 區，收禮桌 2 張＋椅子 4 張</dd>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ 時間軸 ============ -->
+<section role="tabpanel" id="p-b" aria-labelledby="tab-b" hidden>
+  <p class="lead">紅底是你要動的時段，其他是現場背景，知道就好。</p>
+
+  <div class="tl">
+
+    <div class="row mine">
+      <div class="time">07:30</div>
+      <div>
+        <div class="mytask">抵達萬怡，和小潔到 1F MJ Kitchen 吃早餐</div>
+        <div class="sub">確認單登記的用餐抵達時間就是 07:30；早餐供應到 10:00。新郎新娘不下來吃</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="time">08:00</div>
+      <div class="stage">攝影 Wayne 開始拍攝（07:55–08:00 到場領樓層卡）</div>
+    </div>
+
+    <div class="row">
+      <div class="time">08:30</div>
+      <div class="stage">新娘、新娘媽媽妝髮；08:45 佈置花初到場換識別證</div>
+    </div>
+
+    <div class="row mine">
+      <div class="time">09:00</div>
+      <div>
+        <div class="mytask">文定準備：金飾不擺出來，由你收著</div>
+        <div class="sub">新娘 09:00 完妝（龍鳳褂）；09:25 新郎和喝茶親友到霖苑廳集合、聘禮放上聘禮桌</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="time">09:30</div>
+      <div class="stage">文定儀式 09:30–10:00：奉茶改口 → 壓茶甌 → 下聘回禮 → 互戴金戒 → 婆婆戴項鍊手鍊 → 吃湯圓 → 09:50 合影。當代 Kelly 引導</div>
+    </div>
+
+    <div class="row">
+      <div class="time">10:00</div>
+      <div class="stage">文定結束，新娘 10:00–10:20 回房；新郎核對喜餅</div>
+    </div>
+
+    <div class="row">
+      <div class="time">10:30</div>
+      <div class="stage">新娘換白紗、花童綁頭髮；10:45 主持人兼音控 Toffee 報到</div>
+    </div>
+
+    <div class="row">
+      <div class="time">11:00</div>
+      <div class="stage">彩排 11:00–11:30：新人、花童、主婚人、主持人、飯店人員走第一次進場</div>
+    </div>
+
+    <div class="row mine">
+      <div class="time">11:30</div>
+      <div>
+        <div class="mytask">開始迎賓，帶招待引領賓客入席</div>
+        <div class="sub">請主桌長輩入座；收禮在 C 區，男方 宛儒、舒涵／女方 果果，兩邊分開收、紅包不拆；工作人員餐 11:30 送達，Mike 裕庭收</div>
+      </div>
+    </div>
+
+    <div class="row mine">
+      <div class="time">11:45</div>
+      <div>
+        <div class="mytask">和劉佳潔發女方家人的大餅</div>
+        <div class="sub">11:45–12:30，白色盒、內含大餅，直接走到親戚那桌發；櫃檯接待不用發</div>
+      </div>
+    </div>
+
+    <div class="row mine">
+      <div class="time">12:00</div>
+      <div>
+        <div class="mytask">和飯店確認開席時間與開席桌數</div>
+        <div class="sub">開席時間就是第一次進場時間 12:30；不足保證桌仍以 20 桌計，未開席菜色可外帶</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="time">12:30</div>
+      <div class="stage">第一次進場：花童 → 男方主婚人 → 新郎 → 女方主婚人 → 新娘。12:40 上台儀式（許願宣誓、交換戒指、香檳塔、舉杯），12:50 開席上菜</div>
+    </div>
+
+    <div class="row">
+      <div class="time">13:00</div>
+      <div class="stage">新娘回休息室換魚尾禮服；主持人提醒賓客寫祝福卡</div>
+    </div>
+
+    <div class="row">
+      <div class="time">13:30</div>
+      <div class="stage">第二次進場、收祝福卡、抽獎（夏慕尼餐券共 8 張、eSIM 5 份）；13:45 開始逐桌敬酒</div>
+    </div>
+
+    <div class="row">
+      <div class="time">14:00</div>
+      <div class="stage">敬酒到 14:15；新娘 14:15 回休息室換紫色送客禮服</div>
+    </div>
+
+    <div class="row">
+      <div class="time">14:30</div>
+      <div class="stage">14:45 新人在門口拍照區送客，飯店備喜糖與喜糖籃</div>
+    </div>
+
+    <div class="row mine">
+      <div class="time">15:00</div>
+      <div>
+        <div class="mytask">宴席結束，禮金由你保管（男女方分開，紅包不拆）</div>
+        <div class="sub">結帳人 呂威辰（新郎姊夫）刷卡結帳；佈置花初開始撤場</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="time">16:00</div>
+      <div class="stage">新娘休息室交還飯店，佈置物載離，攝影服務結束</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ 我的工作 ============ -->
+<section role="tabpanel" id="p-c" aria-labelledby="tab-c" hidden>
+  <p class="lead">做完就打勾。打勾只存在這支手機上，別人看到的還是空的。</p>
+
+  <h2 class="block">文定（09:00–10:00）</h2>
+  <ul class="check">
+    <li><input type="checkbox" id="k1"><label for="k1"><span class="lt">收好金飾</span><span class="ld">文定金飾不擺出來，由你保管</span></label></li>
+  </ul>
+
+  <h2 class="block">喜餅</h2>
+  <ul class="check">
+    <li><input type="checkbox" id="k2"><label for="k2"><span class="lt">發女方家人的大餅　<span class="tag">11:45–12:30</span></span><span class="ld">白色盒、內含大餅，你和劉佳潔直接走到親戚那桌發，櫃檯接待不用發。飯店 10/10 代收郭元益中式 28 盒、西式 145 盒</span></label></li>
+  </ul>
+
+  <h2 class="block">迎賓（11:30–12:25）</h2>
+  <ul class="check">
+    <li><input type="checkbox" id="k3"><label for="k3"><span class="lt">帶招待引領賓客入席</span><span class="ld">11:30 開始</span></label></li>
+    <li><input type="checkbox" id="k4"><label for="k4"><span class="lt">請主桌長輩入座</span><span class="ld">男方：新郎、爸爸、媽媽、二叔、三叔、舅舅／女方：新娘、爸爸、媽媽、三位舅舅</span></label></li>
+    <li><input type="checkbox" id="k5"><label for="k5"><span class="lt">確認收禮區就位</span><span class="ld">C 區，收禮桌 2 張＋椅子 4 張，不需收禮桌牌。男方 宛儒、舒涵／女方 果果</span></label></li>
+    <li><input type="checkbox" id="k11"><label for="k11"><span class="lt">跟收禮的人交代兩件事</span><span class="ld">男女方禮金分開收、分開放；紅包不要拆，錢不要從紅包裡抽出來</span></label></li>
+    <li><input type="checkbox" id="k6"><label for="k6"><span class="lt">清點接待區文具</span><span class="ld">飯店提供：簽名本 2 本、禮金簿 1 本、紅包袋 20 個、禮金謝卡 15 張、簽字筆 6 支</span></label></li>
+  </ul>
+
+  <h2 class="block">開席（12:00）</h2>
+  <ul class="check">
+    <li><input type="checkbox" id="k7"><label for="k7"><span class="lt">確認開席時間</span><span class="ld">等於第一次進場時間 12:30</span></label></li>
+    <li><input type="checkbox" id="k8"><label for="k8"><span class="lt">確認開席桌數</span><span class="ld">保證 20 葷桌＋預備 1 桌。不足保證桌仍以保證桌數收費，未開席的菜可外帶</span></label></li>
+    <li><input type="checkbox" id="k9"><label for="k9"><span class="lt">核對餐飲細節</span><span class="ld">素食套餐 2 套（當天不接受賓客自行加點）、兒童椅 4 張、自備香檳 2 瓶、每桌紅酒 2 瓶</span></label></li>
+  </ul>
+
+  <h2 class="block">散場（15:00）</h2>
+  <ul class="check">
+    <li><input type="checkbox" id="k10"><label for="k10"><span class="lt">保管禮金</span><span class="ld">宴席結束後禮金由你保管。男女方分開點收，紅包維持原樣不拆</span></label></li>
+  </ul>
+</section>
+
+<!-- ============ 特殊餐位 ============ -->
+<section role="tabpanel" id="p-f" aria-labelledby="tab-f" hidden>
+  <p class="lead">開席前確認這 6 桌的特殊安排就位。</p>
+
+  <h2 class="block">兒童椅 4 張</h2>
+  <div class="duties">
+    <div class="duty"><span class="t">6 桌</span><span class="n">承緯兒子</span><span class="d">男方親友‧國中同學</span></div>
+    <div class="duty"><span class="t">8 桌</span><span class="n">沐沐</span><span class="d">男方親友，也是花童</span></div>
+    <div class="duty"><span class="t">9 桌</span><span class="n">建成女兒</span><span class="d">女方親友</span></div>
+    <div class="duty"><span class="t">18 桌</span><span class="n">魏愷陞</span><span class="d">品酒會好友</span></div>
+  </div>
+  <div class="panel" style="margin-top:10px">
+    <p>四張都是<b>佔位</b>：靠桌緣擺，同時撤掉一張大人椅。這四桌的大人座位因此各少一位，但費用與菜量仍以 12 人計。</p>
+  </div>
+
+  <h2 class="block">素食 2 套</h2>
+  <div class="duties">
+    <div class="duty"><span class="t">2 桌</span><span class="n">新郎姑姑</span><span class="d">男方親友</span></div>
+    <div class="duty"><span class="t">3 桌</span><span class="n">陳冠潔</span><span class="d">女方親友</span></div>
+  </div>
+  <div class="panel" style="margin-top:10px">
+    <p>每套 NT$2,200＋10%，費用另計不含在葷桌內。當天不接受賓客自行加點素食。</p>
+  </div>
+
+  <h2 class="block">各桌配置</h2>
+  <div class="table-wrap">
+    <table class="grid">
+      <thead><tr><th>桌號</th><th>桌卡名稱</th><th>人數</th><th>兒童椅</th><th>素食</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>主桌</td><td class="n">12</td><td class="q">—</td><td class="q">—</td></tr>
+        <tr><td>2</td><td>男方親友</td><td class="n">12</td><td class="q">—</td><td class="hit">1 套（新郎姑姑）</td></tr>
+        <tr><td>3</td><td>女方親友</td><td class="n">12</td><td class="q">—</td><td class="hit">1 套（陳冠潔）</td></tr>
+        <tr><td>5</td><td>女方親友</td><td class="n">12</td><td class="q">—</td><td class="q">—</td></tr>
+        <tr><td>6</td><td>男方親友‧國中同學</td><td class="n">12</td><td class="hit">1 張（承緯兒子）</td><td class="q">—</td></tr>
+        <tr><td>7</td><td>女方親友</td><td class="n">11</td><td class="q">—</td><td class="q">—</td></tr>
+        <tr><td>8</td><td>男方親友</td><td class="n">11</td><td class="hit">1 張（沐沐）</td><td class="q">—</td></tr>
+        <tr><td>9</td><td>女方親友</td><td class="n">11</td><td class="hit">1 張（建成女兒）</td><td class="q">—</td></tr>
+        <tr><td>10</td><td>307同學</td><td class="n">11</td><td class="q">—</td><td class="q">—</td></tr>
+        <tr><td>11</td><td>女方親友</td><td class="n">11</td><td class="q">—</td><td class="q">—</td></tr>
+        <tr><td>12</td><td>307同學</td><td class="n">11</td><td class="q">—</td><td class="q">—</td></tr>
+        <tr><td>13</td><td>東京好友</td><td class="n">11</td><td class="q">—</td><td class="q">—</td></tr>
+        <tr><td>15</td><td>304同學‧永豐同事</td><td class="n">12</td><td class="q">—</td><td class="q">—</td></tr>
+        <tr><td>16</td><td>109同學</td><td class="n">12</td><td class="q">—</td><td class="q">—</td></tr>
+        <tr><td>17</td><td>新娘大學同學</td><td class="n">12</td><td class="q">—</td><td class="q">—</td></tr>
+        <tr><td>18</td><td>品酒會好友</td><td class="n">11</td><td class="hit">1 張（魏愷陞）</td><td class="q">—</td></tr>
+        <tr><td>19</td><td>新娘大學同學</td><td class="n">12</td><td class="q">—</td><td class="q">—</td></tr>
+        <tr><td>20</td><td>新郎大學‧同梯好友</td><td class="n">10</td><td class="q">—</td><td class="q">—</td></tr>
+        <tr><td>21</td><td>大同大學同學</td><td class="n">11</td><td class="q">—</td><td class="q">—</td></tr>
+        <tr><td>22</td><td>Realtek同事</td><td class="n">10</td><td class="q">—</td><td class="q">—</td></tr>
+        <tr><td>23</td><td>中山大學同學</td><td class="n">12</td><td class="q">—</td><td class="q">—</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="lead" style="margin-top:8px">沒有 4 號和 14 號桌，實際 21 桌，名單上共 239 位。</p>
+</section>
+
+<!-- ============ 座位查詢 ============ -->
+<section role="tabpanel" id="p-h" aria-labelledby="tab-h" hidden>
+  <p class="lead">輸入賓客的名字，查他坐哪一桌。</p>
+
+  <div class="search">
+    <input type="search" id="seat-q" placeholder="例如：林宛儒、307、同學" autocomplete="off" aria-label="搜尋賓客或桌名">
+  </div>
+  <div id="seat-out"></div>
+</section>
+
+<!-- ============ 位上禮 ============ -->
+<section role="tabpanel" id="p-g" aria-labelledby="tab-g" hidden>
+  <p class="lead">位上禮和祝福卡都是飯店擺，主桌兩樣都不放。</p>
+
+  <div class="panel warn">
+    <h3>主桌（1 號桌）不放位上禮</h3>
+    <p>擺設時請確認主桌是空的，多出來的位上禮放到預備桌。</p>
+  </div>
+
+  <h2 class="block">位上禮</h2>
+  <div class="panel">
+    <dl class="pair">
+      <dt>品項</dt><dd>郭元益夏威夷果軟糖</dd>
+      <dt>數量</dt><dd>230 個</dd>
+      <dt>送達</dt><dd>10/10 16:00 送到飯店，由 Amber 代收</dd>
+      <dt>擺設</dt><dd>飯店協助擺設，每位 1 個</dd>
+      <dt>不放</dt><dd>主桌（1 號桌）；多的放預備桌</dd>
+    </dl>
+  </div>
+
+  <h2 class="block">自製祝福卡</h2>
+  <div class="panel">
+    <dl class="pair">
+      <dt>數量</dt><dd>每位 1 張</dd>
+      <dt>擺設</dt><dd>飯店協助擺設，每桌另放 3–5 枝筆</dd>
+      <dt>不放</dt><dd>主桌</dd>
+      <dt>用途</dt><dd>13:30 二進時賓客投入透明容器，之後抽獎</dd>
+    </dl>
+  </div>
+
+  <h2 class="block">喜餅</h2>
+  <div class="panel">
+    <dl class="pair">
+      <dt>中式</dt><dd>郭元益 28 盒</dd>
+      <dt>西式</dt><dd>郭元益 145 盒</dd>
+      <dt>送達</dt><dd>10/10 12:00 送到飯店</dd>
+      <dt>女方家人</dt><dd>白色盒、內含大餅，11:45–12:30 由劉謙和劉佳潔直接走到親戚那桌發</dd>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ 聯絡人 ============ -->
+<section role="tabpanel" id="p-d" aria-labelledby="tab-d" hidden>
+  <p class="lead">點「複製」把號碼複製起來，再到電話或 LINE 裡貼上。</p>
+
+  <h2 class="block">新人</h2>
+  <div class="people">
+    <div class="p"><span class="role">新郎</span><span class="name">方志豪 Andy</span><span class="tel"><span class="num">0935-509-099</span><button class="copy" data-num="0935509099">複製</button></span></div>
+    <div class="p"><span class="role">新娘</span><span class="name">劉丹儀 Danni</span><span class="tel"><span class="num">0928-011-723</span><button class="copy" data-num="0928011723">複製</button></span></div>
+  </div>
+
+  <h2 class="block">飯店</h2>
+  <div class="people">
+    <div class="p"><span class="role">國泰萬怡業務</span><span class="name">潘婉婷 Amber</span><span class="when">現場窗口</span><span class="tel"><span class="num">0916-696-285</span><button class="copy" data-num="0916696285">複製</button></span></div>
+    <div class="p"><span class="role">飯店總機</span><span class="name">台北國泰萬怡酒店</span><span class="when">民生東路三段 6 號</span><span class="tel"><span class="num">02-7750-3389</span><button class="copy" data-num="0277503389">複製</button></span></div>
+    <div class="p"><span class="role">小管家</span><span class="name">當天現場管家</span><span class="when">遞戒指、帶新娘換裝</span><span class="tel"><span class="num none">姓名與電話待飯店提供</span></span></div>
+  </div>
+
+  <h2 class="block">當代時尚</h2>
+  <div class="people">
+    <div class="p"><span class="role">主持人／音控</span><span class="name">沈伶潔 Toffee</span><span class="when">10:45 報到</span><span class="tel"><span class="num">0989-800-722</span><button class="copy" data-num="0989800722">複製</button></span></div>
+    <div class="p"><span class="role">文定引導</span><span class="name">Kelly</span><span class="when">09:00 起</span><span class="tel"><span class="num none">電話待提供</span></span></div>
+  </div>
+
+  <h2 class="block">廠商</h2>
+  <div class="people">
+    <div class="p"><span class="role">新娘秘書</span><span class="name">薛怡妏 Wenny</span><span class="when">06:15 到場</span><span class="tel"><span class="num">0958-942-495</span><button class="copy" data-num="0958942495">複製</button></span></div>
+    <div class="p"><span class="role">攝影</span><span class="name">張哲瑋 Wayne</span><span class="when">07:55 到場</span><span class="tel"><span class="num">0985-656-019</span><button class="copy" data-num="0985656019">複製</button></span></div>
+    <div class="p"><span class="role">佈置</span><span class="name">花初 夏棽琦</span><span class="when">08:45 到場</span><span class="tel"><span class="num">0907-730-938</span><button class="copy" data-num="0907730938">複製</button></span></div>
+  </div>
+
+  <h2 class="block">家人與工作人員</h2>
+  <div class="people">
+    <div class="p"><span class="role">發大餅</span><span class="name">劉佳潔</span><span class="when">11:45–12:30</span><span class="tel"><span class="num none">電話待提供</span></span></div>
+    <div class="p"><span class="role">早餐同行</span><span class="name">小潔</span><span class="when">07:30 一起到萬怡</span><span class="tel"><span class="num none">電話待提供</span></span></div>
+    <div class="p"><span class="role">結帳</span><span class="name">呂威辰（新郎姊夫）</span><span class="when">宴席結束後刷卡</span><span class="tel"><span class="num">0989-582-432</span><button class="copy" data-num="0989582432">複製</button></span></div>
+    <div class="p"><span class="role">工作人員餐</span><span class="name">Mike 裕庭</span><span class="when">11:30 收 8 份</span><span class="tel"><span class="num none">電話待提供</span></span></div>
+    <div class="p"><span class="role">收禮 男方</span><span class="name">宛儒、舒涵</span><span class="tel"><span class="num none">電話待提供</span></span></div>
+    <div class="p"><span class="role">收禮 女方</span><span class="name">果果</span><span class="tel"><span class="num none">電話待提供</span></span></div>
+  </div>
+</section>
+
+<!-- ============ 現場守則 ============ -->
+<section role="tabpanel" id="p-e" aria-labelledby="tab-e" hidden>
+  <p class="lead">賓客和廠商最常問你的幾件事。</p>
+
+  <h2 class="block">場地配置</h2>
+  <figure class="plan">
+    <div class="plan-img"><img src="floorplan.png" alt="霖苑廳平面配置圖：主桌 1 號在紅毯最內側，左右兩側依序排到 23 號桌，A 區在左下、C 區接待桌在右下，新人進場入口在右下角"></div>
+    <figcaption>左右滑動或點圖放大。藍字是男方桌，紅字是女方桌。</figcaption>
+  </figure>
+  <div class="panel">
+    <dl class="pair">
+      <dt>紅毯</dt><dd>從右下角的新人進場入口，一路走到最內側的 1 號主桌</dd>
+      <dt>桌號</dt><dd>1–23 號，沒有 4 號和 14 號，實際 21 桌、239 位。各桌名單見「座位查詢」</dd>
+      <dt>A 區</dt><dd>左下：送客背板、相本小圓桌</dd>
+      <dt>C 區</dt><dd>右下：接待桌、A3 配置圖畫架（場地圖＋座位表）</dd>
+      <dt>桌巾口布</dt><dd>主桌酒紅色；客桌與收禮桌香檳金</dd>
+      <dt>不擺</dt><dd>相片畫架、高吧桌、相片桌花、收禮桌花</dd>
+    </dl>
+  </div>
+
+  <h2 class="block">停車</h2>
+  <div class="panel">
+    <p>停 B3–B4，車牌感應進場。席間飯店服務人員會逐桌詢問車號辦折抵，離場時在繳費機過一次車號就好。</p>
+    <p style="margin-top:6px"><span class="todo">確認單寫「免費提供當日停車」，同欄又註「午宴席間 11:00–15:00」，早到的廠商怎麼折抵還要問 Amber</span></p>
+  </div>
+
+  <h2 class="block">飯店禁用物品</h2>
+  <div class="panel warn">
+    <p>會場內全面禁止，違規清潔費依影響範圍每平方公尺加收 NT$3,000。</p>
+    <ul>
+      <li>拉炮、紙花、亮片、亮粉、金粉、飄飄樂</li>
+      <li>真花瓣、泡泡槍</li>
+      <li>煙火、仙女棒、爆竹等易燃物</li>
+      <li>天燈、氣球（飯店位於機場禁航區）</li>
+    </ul>
+  </div>
+
+  <h2 class="block">廠商進場</h2>
+  <div class="panel">
+    <p><b>領樓層卡</b>：到 1F 櫃台說是「方劉府喜宴廠商」，報姓名和電話核對就可以領。</p>
+    <ul>
+      <li>佈置花初要另外到 1F 安全部換識別證並配掛</li>
+      <li>佈置物料走員工卸貨區和員工貨梯，自備手推車，不可用客梯</li>
+      <li>停車場入口高度限制 2.2 公尺</li>
+    </ul>
+  </div>
+
+  <h2 class="block">其他</h2>
+  <div class="panel">
+    <ul style="padding-left:19px;margin:0">
+      <li>2F 新娘休息室 09:00 開放，16:00 交還；新人預計 10:55 進休息室</li>
+      <li>點鈔機只有一台，會放在新娘休息室裡</li>
+      <li>1F 大廳指示牌寫「方劉府喜宴 12:00–15:00」</li>
+      <li>飯店早餐 MJ Kitchen 06:30–10:00</li>
+      <li>依稅法，婚宴當日不得開三聯式發票</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer>資料來源：飯店細節確認單、當代時尚婚禮流程表與文定流程表、新秘與廠商合約。標記待確認的項目表示文件之間有出入或尚未提供。</footer>
+
+<script>
+(function(){
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+  function show(tab){
+    tabs.forEach(function(t){
+      var sel = t === tab;
+      t.setAttribute('aria-selected', sel ? 'true' : 'false');
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !sel;
+    });
+    window.scrollTo({top:0, behavior:'instant'});
+  }
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(){ show(t); });
+    t.addEventListener('keydown', function(e){
+      var i = tabs.indexOf(t), n = null;
+      if(e.key === 'ArrowRight') n = tabs[(i+1) % tabs.length];
+      if(e.key === 'ArrowLeft')  n = tabs[(i-1+tabs.length) % tabs.length];
+      if(n){ e.preventDefault(); n.focus(); show(n); }
+    });
+  });
+
+  // copy phone numbers
+  document.addEventListener('click', function(e){
+    var b = e.target.closest ? e.target.closest('.copy') : null;
+    if(!b) return;
+    var num = b.getAttribute('data-num');
+    var done = function(){
+      var old = b.textContent;
+      b.textContent = '已複製';
+      setTimeout(function(){ b.textContent = old; }, 1400);
+    };
+    try{
+      navigator.clipboard.writeText(num).then(done, function(){ select(b); });
+    }catch(err){ select(b); }
+  });
+  function select(b){
+    var span = b.parentNode.querySelector('.num');
+    try{
+      var r = document.createRange();
+      r.selectNodeContents(span);
+      var s = window.getSelection();
+      s.removeAllRanges(); s.addRange(r);
+      b.textContent = '請長按複製';
+      setTimeout(function(){ b.textContent = '複製'; }, 2200);
+    }catch(err){}
+  }
+
+  // seat lookup
+  const SEATS={"1":{"n":"主桌","p":["劉丹儀","方志豪","新郎爸爸","新郎媽媽","新郎舅舅","新郎二叔","新郎三叔","新娘爸爸","新娘媽媽","新娘三舅舅陳金田","新娘四舅舅陳進財","新娘五舅舅陳柏化"]},"2":{"n":"男方親友","p":["新郎阿嬤","阿尼","新郎阿姨","新郎舅媽","新郎五姑婆","新郎四姑丈","新郎四姑婆","新郎姑姑","新郎姑丈","新郎至信","莉婷","少飛"]},"3":{"n":"女方親友","p":["丹姐","劉謙","陳冠潔","新娘三伯父一家","新娘三伯父一家","新娘三伯父一家","新娘三伯父一家","新娘三伯父一家","新娘三伯父一家","劉恩啟","恩啟老婆","恩啟小孩"]},"5":{"n":"女方親友","p":["劉承育","承育老婆","承育小孩","新娘大伯母一家","新娘大伯母一家","新娘大伯母一家","新娘大伯母一家","新娘大伯母一家","新娘大伯母一家","新娘大伯母一家","新娘大伯母一家","新娘大伯母一家"]},"6":{"n":"男方親友‧國中同學","p":["新郎二叔一家","新郎二叔一家","新郎二叔一家","新郎三叔一家","新郎三叔一家","吳奇勳","李翎澐","莊尹廣","林承緯","邱詩涵","承緯兒子(童)","鄭凱壬"]},"7":{"n":"女方親友","p":["劉貴櫻","劉貴櫻攜伴","劉嫻穗","嫻穗老公","嫻穗小孩","劉孟忻","孟忻老公","孟忻小孩","劉佩怡","佩怡老公","王秀真"]},"8":{"n":"男方親友","p":["姐夫一家","姐夫一家","姐夫一家","姐夫一家","新郎姊姊","新郎姊夫","沐沐(童)","Berry叔叔","Lucy阿姨","Agenla阿姨","Agenla阿姨"]},"9":{"n":"女方親友","p":["陳藝中","劉季汶","陳郁儒","柯怡君","小舅舅","小舅媽","陳建成","廖家恩","建成女兒(童)","陳伊玟","小虎"]},"10":{"n":"307同學","p":["黃裕庭","郭宥均","許理賀","吳亞澤","林威辰","詹佳穎","林士庭","鄧瑋婷","蕭名鋐","李奕緯","蕭詩穎"]},"11":{"n":"女方親友","p":["陳伊睫","陳奕辰","陳愷祥","陳瑀晨","陳麗宇","李俊賢","麗宇小孩","麗宇小孩","鄭舒文","舒文小孩","舒文小孩"]},"12":{"n":"307同學","p":["張有元","黃紫齊","鄧皓","許凱翔","簡偉璿","卓均鴻","董明勳","邱民翔","賴雅民","李奕萱","王辰方"]},"13":{"n":"東京好友","p":["荻野夏子","吳心驊","吳梵宇","林冠臻","通山優子","Woensdregt 咲季","Woensdregt Wilem","千葉 恵梨","野崎拓也","陳怡潔","蔡曜全"]},"15":{"n":"304同學‧永豐同事","p":["林智筠","吳彥欣","黃瑞凡","廖珮婷","潘彥伯","吳大綱","陳沁彤","賴幼心","李建霖","蕭揚曆","林簧至","莊奇恩"]},"16":{"n":"109同學","p":["林庭安","Marcus","林志軒","劉家彭","林宛儒","楊舒涵","陳冠廷","蘇湘茹","黃國書","劉亞軒","賴璟華","賴重宇"]},"17":{"n":"新娘大學同學","p":["陳雅嫚","吳安霓","吳懿芳","郭峰杰","陳姿卉","內藤洋輔","張瑋真","陳怡鈞","張芷寧","高子甯","洪彗珊","張芙菱"]},"18":{"n":"品酒會好友","p":["古澤繪美","陳品碩","Ｍelody","蔡旻真","魏軾展","魏愷陞(童)","張慈芮","郭睿承","塗昱銘","謝瑾萱","蔡旻珊"]},"19":{"n":"新娘大學同學","p":["林奈","馮禹棠","蔡怡得","舒馨平","林軒暐","邱馨儀","謝佳安","蕭嘉郁","妹尾圭祐","陳威","蕭翔育","松山怜未"]},"20":{"n":"新郎大學‧同梯好友","p":["鄭益彰","鄭益彰老婆","吳冠廷","林行儒","施復中","陳建廷","趙柏宇","陳姿敏","洪國軒","溫登翔"]},"21":{"n":"大同大學同學","p":["董恩劭","蔡委晏","許展誌","張微晴","陳甚安","甚安女友","謝宗修","高煒倫","洪稜凱","邱蔚政","許禮全"]},"22":{"n":"Realtek同事","p":["陳潤安","陳翊欣","周孟賢","陳奕帆","李建生","高凰喻","曾郭中","郭映彣","曹宇慶","胡聖庭"]},"23":{"n":"中山大學同學","p":["陳榆青","許葆貞","李鑫","蘇維傑","吳思臻","陳照堂","林璟妘","張博鈞","夏瑄黛","邱薏雯","郭東杰","李軒"]}};
+  var qEl = document.getElementById('seat-q');
+  var outEl = document.getElementById('seat-out');
+  function esc(s){return s.replace(/[&<>"]/g,function(ch){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch];});}
+  function mark(s,q){
+    if(!q) return esc(s);
+    var i = s.toLowerCase().indexOf(q);
+    if(i < 0) return esc(s);
+    return esc(s.slice(0,i)) + '<mark>' + esc(s.slice(i,i+q.length)) + '</mark>' + esc(s.slice(i+q.length));
+  }
+  function renderSeats(){
+    var q = (qEl.value || '').trim().toLowerCase();
+    var tables = Object.keys(SEATS);
+    var out = '';
+    if(!q){
+      outEl.innerHTML = '<p class="empty">全場 21 桌、239 位。輸入名字就會跳出桌號。</p>';
+      return;
+    }
+    var found = 0;
+    tables.forEach(function(t){
+      var d = SEATS[t];
+      var byName = d.n.toLowerCase().indexOf(q) >= 0 || t === q;
+      var hits = d.p.filter(function(p){ return p.toLowerCase().indexOf(q) >= 0; });
+      if(!byName && !hits.length) return;
+      found++;
+      var list = (byName && !hits.length) ? d.p : hits;
+      out += '<div class="res"><div class="rt"><span class="rn">' + t + '</span>'
+           + '<span class="rl">' + esc(d.n) + '</span>'
+           + '<span class="rc">' + d.p.length + ' 位</span></div>'
+           + '<div class="rp">' + list.map(function(p){ return mark(p,q); }).join('、') + '</div></div>';
+    });
+    outEl.innerHTML = found ? out : '<p class="empty">名單裡找不到「' + esc(qEl.value.trim()) + '」。名單上有些人是寫「某某一家」或小名，可以試試桌名或姓氏。</p>';
+  }
+  if(qEl){
+    qEl.addEventListener('input', renderSeats);
+    renderSeats();
+  }
+
+  // remember checkboxes on this device only
+  var boxes = document.querySelectorAll('.check input[type="checkbox"]');
+  var KEY = 'fangliu-usher-v1';
+  var saved = {};
+  try{ saved = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; }catch(err){ saved = {}; }
+  Array.prototype.forEach.call(boxes, function(b){
+    if(saved[b.id]) b.checked = true;
+    b.addEventListener('change', function(){
+      saved[b.id] = b.checked;
+      try{ localStorage.setItem(KEY, JSON.stringify(saved)); }catch(err){}
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
